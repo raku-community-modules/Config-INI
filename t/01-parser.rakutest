@@ -1,8 +1,9 @@
-use v6;
 use Test;
-plan 44;
 
 use Config::INI;
+
+plan 44;
+
 
 my $first = Q {
 foo=bar
@@ -167,4 +168,6 @@ is-deeply %te, {
         asd         => 'esd',
         hashcomment => 'before'
     }
-};
+}
+
+# vim: expandtab shiftwidth=4

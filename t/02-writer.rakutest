@@ -1,7 +1,8 @@
-use v6;
+use Test;
+
 use Config::INI;
 use Config::INI::Writer;
-use Test;
+
 plan 14;
 
 ok 1, 'Modules loaded';
@@ -52,4 +53,4 @@ ok 1, 'Modules loaded';
     is %new<onemore><why>, 'not', 'content ok, 3/3';
 }
 
-# vim: ft=perl6
+# vim: expandtab shiftwidth=4

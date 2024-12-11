@@ -1,6 +1,9 @@
-use v6;
-use Config::INI;
 use Test;
+
+use Config::INI;
+
 plan 1;
 
 ok 1, 'Loading module succeeded';
+
+# vim: expandtab shiftwidth=4

@@ -1,5 +1,3 @@
-use v6;
-
 unit module Config::INI::Writer;
 
 our sub dump (%what) {
@@ -17,7 +15,7 @@ our sub dump (%what) {
             $ret ~= "$key=$value\n";
         }
     }
-    return $ret;
+    $ret
 }
 
 our sub dumpfile (%what, $where) {
@@ -26,4 +24,4 @@ our sub dumpfile (%what, $where) {
     $fh.close;
 }
 
-# vim: ft=perl6
+# vim: expandtab shiftwidth=4

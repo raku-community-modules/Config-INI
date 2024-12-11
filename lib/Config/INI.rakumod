@@ -1,5 +1,3 @@
-use v6;
-
 unit module Config::INI;
 
 grammar INI {
@@ -50,12 +48,16 @@ Config::INI - parse standard configuration files (.ini files)
 
 =head1 SYNOPSIS
 
-    use Config::INI;
-    my %hash = Config::INI::parse_file('config.ini');
-    #or
-    %hash = Config::INI::parse($file_contents);
-    say %hash<_><root_property_key>;
-    say %hash<section><in_section_key>;
+=begin code :lang<raku>
+
+use Config::INI;
+my %hash = Config::INI::parse_file('config.ini');
+#or
+%hash = Config::INI::parse($file_contents);
+say %hash<_><root_property_key>;
+say %hash<section><in_section_key>;
+
+=end code
 
 =head1 DESCRIPTION
 
@@ -64,14 +66,36 @@ one C<Str> argument, where parse_file is just parse(slurp $file).
 Both return a hash which keys are either toplevel keys or a section
 names. For example, the following config file:
 
-    foo=bar
-    [section]
-    another=thing
+=begin code :lang<ini>
+
+foo=bar
+[section]
+another=thing
+
+=end code
 
 would result in the following hash:
 
-    { '_' => { foo => "bar" }, section => { another => "thing" } }
+=begin code :lang<raku>
+
+{ '_' => { foo => "bar" }, section => { another => "thing" } }
+
+=end code
+
+=head1 AUTHORS
+
+Tadeusz Sośnierz
+
+Nobuo Danjou
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2010 - 2017 Tadeusz Sośnierz
+
+Copyright 2024 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
 =end pod
 
-# vim: ft=perl6
+# vim: expandtab shiftwidth=4
