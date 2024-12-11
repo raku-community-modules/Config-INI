@@ -1,4 +1,6 @@
 Revision history for Config::Ini
 
 {{$NEXT}}
+
+1.1  2024-12-11T19:15:25+01:00
     - Initial version as a Raku Community module

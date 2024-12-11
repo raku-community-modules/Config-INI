@@ -1,17 +1,27 @@
 {
-    "perl"        : "6.*",
-    "name"        : "Config::INI",
-    "version"     : "1.0",
-    "description" : ".ini file parser and writer module for Perl 6",
-    "provides": {
-        "Config::INI"         : "lib/Config/INI.rakumod",
-        "Config::INI::Writer" : "lib/Config/INI/Writer.rakumod"
-    },
-    "depends"     : [],
-    "auth": "zef:raku-community-modules",
-    "authors" : [
-        "Tadeusz Sośnierz",
-        "Nobuo Danjou"
-    ],
-    "source-url"  : "git://github.com/tadzik/perl6-Config-INI.git"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Tadeusz Sośnierz",
+    "Nobuo Danjou"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "parse standard configuration files (.ini files)",
+  "license": "NOASSERTION",
+  "name": "Config::Ini",
+  "perl": "6.*",
+  "provides": {
+    "Config::INI": "lib/Config/INI.rakumod",
+    "Config::INI::Writer": "lib/Config/INI/Writer.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Config-INI.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "1.1"
 }
