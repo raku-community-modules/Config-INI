@@ -10,7 +10,7 @@
   ],
   "description": "parse standard configuration files (.ini files)",
   "license": "NOASSERTION",
-  "name": "Config::Ini",
+  "name": "Config::INI",
   "perl": "6.*",
   "provides": {
     "Config::INI": "lib/Config/INI.rakumod",
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "1.1"
+  "version": "1.2"
 }

@@ -1,6 +1,9 @@
-Revision history for Config::Ini
+Revision history for Config::INI
 
 {{$NEXT}}
+
+1.2  2024-12-16T18:58:27+01:00
+    - Correct name of module: it's ::INI, not ::Ini
 
 1.1  2024-12-11T19:15:25+01:00
     - Initial version as a Raku Community module
